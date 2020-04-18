@@ -82,3 +82,30 @@ const num = 123.456
 console.log(num.toFixed())
 console.log(num.toFixed(2))
 console.log(num.toFixed(1))
+
+/* Boolean TRUE / FALSE
+Ponizsze wartości zawsze zwracają FALSE:
+false
+undefined
+null
+0
+NaN
+"" - pusty string
+*/
+
+//OBIEKTY ZŁOZONE: array, function, object:
+const arr = [true, 123, "hej", null, undefined, false, "great"];
+console.log(arr)
+
+function test() {
+    console.log("Cześć, jestem funkcją!");
+};
+test();
+
+const myData = {
+    name: "Natalia",
+    age: 27,
+    hairColor: "brown",
+    BOD: undefined
+};
+console.log(myData)
