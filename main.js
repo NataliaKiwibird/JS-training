@@ -25,6 +25,7 @@ console.log(Adres)
 console.log(Adres.length)
 console.log(adres.length)
 
+// template string (nazywany "super string")
 console.log("Cześć, jestem " + name + " i mam " + age + " lat.")
 console.log(`Cześć, jestem ${name} i mam ${age} lat.`)
 // ` ` ${variable} jest skrótem do zapisywania template stringa aka super stringa
@@ -48,6 +49,7 @@ console.log(`Od urodzenia mieszkałam na ulicy ${Adres}, a teraz mieszkam na ${a
 // Zmienne nie mogą zawierać zadnych . Moemy dodać _
 // Do deklaracji zmiennej nie mozemy uzyc zarezerwowanego
 
+// róznica między var i let:
 // var name = "Ada";
 // var name = "Mark";
 // console.log(name)
@@ -57,3 +59,26 @@ console.log(`Od urodzenia mieszkałam na ulicy ${Adres}, a teraz mieszkam na ${a
 // let name = "Mark";
 // console.log(name)
 // Error! 
+
+//Metody stringów i numerów (MDN)
+let myName = "natalia"
+let myNameFixed = myName.charAt(0).toUpperCase() + myName.slice(1);
+console.log(myNameFixed)
+console.log(myName.includes("N"))
+console.log(myName.includes("n"))
+
+console.log(myName.repeat(2))
+console.log(myNameFixed.repeat(4))
+
+const lastName = "Bubiak"
+const fullName = myNameFixed.concat(" ",lastName);
+console.log(fullName)
+
+console.log(year)
+console.log(typeof(year))
+console.log(typeof(fullName))
+
+const num = 123.456
+console.log(num.toFixed())
+console.log(num.toFixed(2))
+console.log(num.toFixed(1))
