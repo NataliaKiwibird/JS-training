@@ -45,3 +45,4 @@ function restTest (M, ...N) {
 }
 restTest(2,6,9)
 
+// callback - wcześniej stworzona juz funkcja, którą przywołujemy jako argument w innej części kodu
