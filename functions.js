@@ -46,3 +46,61 @@ function restTest (M, ...N) {
 restTest(2,6,9)
 
 // callback - wcześniej stworzona juz funkcja, którą przywołujemy jako argument w innej części kodu
+
+// Zadanie 1:
+
+let score;
+
+function Add (o,p) {
+    score = o + p;
+    if (score % 2 === 0) {
+        funkcjaEven()
+    } else {
+        funkcjaOdd()
+    };
+};
+
+const funkcjaEven = function () {
+    console.log(`Liczba ${score} jest parzysta`)
+};
+
+const funkcjaOdd = () => {
+    console.log(`Liczba ${score} jest nieparzysta`)
+};
+
+Add(3,21)
+
+// Zadanie 2:
+
+let cels;
+let temp;
+
+function fahrenheit (x) {
+    cels = x;
+    temp = cels * 1.8 + 32
+};
+
+fahrenheit(14);
+console.log(`${cels}°C to ${temp}°F.`)
+console.log(`${temp}°F to ${cels}°C.`)
+
+// Zadanie 3:
+
+let numm = 10;
+let numberss = [];
+
+for (let r = 0; r < numm; r++) {
+    numberss.push(r)
+};
+console.log(numberss)
+
+const funkcjaa = (xx) => {
+    if (xx !== 0 && xx % 3 === 0) {
+        console.log(`${xx} jest podzielne przez 3.`)
+    } else {
+        console.log(`${xx} nie jest podzielne przez 3.`)
+    };
+};
+
+const newVar = numberss.forEach(funkcjaa);
+
