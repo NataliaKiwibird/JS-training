@@ -1,0 +1,19 @@
+.project1 {
+    width: 50vw;
+    height: 320px;
+    margin: 0 auto;
+    background-color: rgb(71, 69, 82);
+    color: white;
+    text-align: center;
+}
+.title {
+    padding-top: 40px;
+}
+button {
+    padding: 15px 20px;
+    font-size: 16px;
+    margin: 10px;
+}
+.text {
+    font-size: 24px;
+}
