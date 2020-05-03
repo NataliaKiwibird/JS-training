@@ -7,11 +7,11 @@ const click = () => {
     item1.classList.toggle('hide');
 
     if (item1.classList.contains('hide')) {
-        icon.style.transform = 'rotate(180deg)'
+        icon.style.transform = 'rotate(180deg)';
     } else {
-        icon.style.transform = 'rotate(0deg)'
+        icon.style.transform = 'rotate(0deg)';
     };
-
 };
+
 
 button.addEventListener('click', click);

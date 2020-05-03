@@ -22,6 +22,6 @@ function changeColor() {
     text.style.color = `rgb(${r},${g},${b})`
 };
 
-bigger.addEventListener('click', sizeUp);
-smaller.addEventListener('click', sizeDown);
-textColor.addEventListener('click', changeColor);
+bigger.addEventListener('click', sizeUp)
+smaller.addEventListener('click', sizeDown)
+textColor.addEventListener('click', changeColor)
