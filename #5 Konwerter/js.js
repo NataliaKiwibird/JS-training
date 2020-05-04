@@ -26,11 +26,13 @@ const swap = () => {
 function celToFahr () {
     fahrenheit = converter.value * 1.8 + 32;
     result.innerText = `${converter.value}°C to ${fahrenheit.toFixed(1)}°F.`
+    converter.value = '';
 };
 
 function fahrToCel () {
     celsius = (converter.value - 32) / 1.8;
     result.innerText = `${converter.value}°F to ${celsius.toFixed(1)}°C.`
+    converter.value = '';
 };
 
 const reset = () => {
@@ -38,26 +40,13 @@ const reset = () => {
     converter.value = '';
 };
 
-// const conversion = () => {
-//     if(converter.value !== '') {
-//         if (one.innerText === '°C') {
-//             celToFahr();
-//         } else {
-//             fahrToCel();
-//         } 
-//         } else {
-//             result.innerText = 'Wpisz liczbę'
-//     }
-// };
 
 changeBtn.addEventListener('click', swap);
 convertBtn.addEventListener('click', function () {
     if (one.innerText === '°C') {
         celToFahr ()
-        converter.value = '';
     } else {
         fahrToCel()
-        converter.value = '';
-    }
+    } 
 });
 resetBtn.addEventListener('click', reset);
