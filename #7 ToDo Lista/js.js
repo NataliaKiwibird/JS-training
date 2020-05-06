@@ -19,7 +19,8 @@ const prepareDOMElements = () => {
 
 // nadawanie nasłuchiwania:
 const prepareDOMEvents = () => {
-    $addBtn.addEventListener('click', addNewTask)
+    $addBtn.addEventListener('click', addNewTask);
+    $ulList.addEventListener('click', checkClick);
 };
 
 function addNewTask () {
@@ -60,9 +61,19 @@ function createToolsArea () {
     $deleteBtn.classList.add('delete');
     $toolsPanel.appendChild($deleteBtn);
     $deleteBtn.innerHTML = '<i class="fas fa-times"></i>';
-
-
 };
+
+const checkClick = (event) => {
+    if (event.target.closest('button').classList.contains('complete')) {
+        event.target.closest('li').classList.toggle('completed');
+        event.target.closest('button').classList.toggle('completed');
+    } else if (event.target.closest('button').classList === 'edit') {
+
+    } else if (event.target.closest('button').classList === 'delete') {
+        
+    };
+
+}; // event = click, event.target = kliknięty element
 
 document.addEventListener('DOMContentLoaded', main);
 
