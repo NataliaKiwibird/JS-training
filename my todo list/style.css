@@ -1,0 +1,29 @@
+body {
+    box-sizing: border-box;
+    width: 30vh;
+    margin: 0 auto;
+}
+.input {
+    height: 5vh;
+    width: 18vw;
+}
+.add {
+    height: 5vh;
+    width: 5vw;
+}
+ul {
+    padding: 0;
+}
+.list-item {
+    list-style: none;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: rgb(211, 211, 211);
+    margin: 5px 0;
+}
+p {
+    color: rgb(105, 105, 105);
+}
+.done {
+    text-decoration: line-through;
+}
