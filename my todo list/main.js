@@ -4,11 +4,14 @@ const ul = document.querySelector('ul');
 
 addBtn.addEventListener('click', (e) => {
     e.preventDefault();
-    const li = document.createElement('li');
-    li.classList.add('list-item');
-    li.textContent = input.value;
-    ul.prepend(li);
-    input.value = '';
+
+    if (input.value !== '') {
+        const li = document.createElement('li');
+        li.classList.add('list-item');
+        li.textContent = input.value;
+        ul.prepend(li);
+        input.value = '';
+    };
 });
 
 ul.addEventListener ('click', e => {
