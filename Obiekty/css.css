@@ -1,0 +1,15 @@
+body {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+button {
+    background-color: #ddd;
+    font-size: 20px;
+    padding: 10px 30px;
+    border: 1px solid #aaa;
+    margin: 10px 20px;
+}
+p {
+    font-size: 30px;
+}

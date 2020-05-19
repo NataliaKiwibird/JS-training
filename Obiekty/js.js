@@ -60,9 +60,39 @@ const newUser = new User ('Maria', 33);
 const newUser2 = new User ('Adam', 25);
 const newUser3 = new User ('Maja', 17);
 
-newUser.powitanie();
+newUser.powitanie()
 newUser2.powitanie()
 newUser3.powitanie()
 
 // dodawanie czegoś do konstruktora:
 User.prototype.country = 'Polska'
+
+const btn1 = document.querySelector('.one');
+const btn2 = document.querySelector('.two');
+const btn3 = document.querySelector('.three');
+const para = document.querySelector('p');
+
+function Food (name, price) {
+    this.name = name;
+    this.price = price;
+};
+
+const pizza = new Food ('Pizza', 20);
+const falafel = new Food ('Falafel', 13);
+const kebab = new Food ('Kebab', 12);
+
+Food.prototype.sentence = function () {
+    para.textContent = `${this.name} kosztuje ${this.price}zł.`
+};
+
+btn1.addEventListener ('click', () => {
+    pizza.sentence()
+});
+
+btn2.addEventListener ('click', () => {
+    falafel.sentence()
+});
+
+btn3.addEventListener ('click', () => {
+    kebab.sentence()
+});
